@@ -12,3 +12,8 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: gateway-9527.com
+zuul:
+  routes:
+    mydept.serviceId: microservicecloud-dept
+    mydept.path: /mydept/**
+  ignored-services: microservicecloud-dept
