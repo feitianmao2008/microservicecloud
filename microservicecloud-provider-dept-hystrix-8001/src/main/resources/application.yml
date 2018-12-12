@@ -30,6 +30,8 @@ eureka:
     prefer-ip-address: true
     instance-id: microservicecloud-dept:8001-hystrix
 
-
-
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'

@@ -29,7 +29,11 @@ eureka:
   instance:
     prefer-ip-address: true
     instance-id: microservicecloud-dept:8001
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
 
 
 
