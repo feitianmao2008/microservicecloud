@@ -1,14 +1,8 @@
 server:
-  port: 3344
+  port: 9527
 spring:
   application:
-    name: microservicecloud-config
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/feitianmao2008/microservicecloud.git
-          search-paths: docs
+    name: microservicecloud-zuul-gateway
 eureka:
   client:
     service-url:
@@ -17,4 +11,4 @@ eureka:
     fetch-registry: true
   instance:
     prefer-ip-address: true
-    instance-id: microservicecloud-config:3344
+    instance-id: gateway-9527.com
